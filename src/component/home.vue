@@ -76,7 +76,7 @@
         <div class="crazy-box">
         	<div class="crazy-time">       		
 				 <swiper :options="swiperOptionSwp4">
-			        <swiper-slide>
+			        <!--<swiper-slide>
 			        	<div class="time-box tim-active">
 			        		<div class="tim1 tim11">08:00</div>
 			        		<div class="tim-text tim-text-active">
@@ -131,7 +131,7 @@
 								<i style="color:#f44903">即将开始</i>
 							</div>
 			        	</div>
-			        </swiper-slide>
+			        </swiper-slide>-->
 			    </swiper>
         	</div>
         	
@@ -161,7 +161,7 @@
 			        
 			        
 			        
-			        <swiper-slide>
+			        <!--<swiper-slide>
 			        	<img src="../../data/images/index/lit2.png" alt="" />
 			        	<div class="crazy-price">
 							¥177&nbsp;<del>¥411</del>
@@ -248,7 +248,7 @@
 							<span class="cra-btnss">已抢光</span>
 						</div>
 						<p></p>
-			        </swiper-slide>
+			        </swiper-slide>-->
 			        
 			      </swiper>
         	</div>
@@ -301,6 +301,20 @@ export default {
           		 spaceBetween: 8,
 		    },
 		    swiperOptionSwp4:{
+		    	notNextTick: true,
+		          autoplay: 3000,
+				  direction:'horizontal',
+		          grabCursor : true,
+		          setWrapperSize :true,
+		          autoHeight: true,
+		          pagination : {
+		          	el:'.swiper-pagination',
+         			clickable:true
+		          },
+		          paginationClickable :true,
+		          mousewheelControl : true,
+		          observeParents:true,
+		          debugger: true,
 		    	slidesPerView: 4,
 		    	spaceBetween: 10
 		    }
