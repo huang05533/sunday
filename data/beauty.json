@@ -1,0 +1,15 @@
+{
+	"pros1":[
+		{
+			"images":"./data/images/index/cur1.png",
+			"title":"面膜榜",
+			"des":"已下单8.0万件"
+		},
+		{
+			"images":"./data/images/index/cur2.png",
+			"title":"化妆棉榜",
+			"des":"已下单5.0万件"
+		}
+		
+	]
+}
