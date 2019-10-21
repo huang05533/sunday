@@ -1,11 +1,24 @@
 <template>
       <div class="index-box">
 	   		 <nav class="nav">
-		   		 		<div class="navs">
-		   		 			<span @click="toggle(home);" class="nav1"></span>
-				            　<span @click="toggle(brand);" class="nav2"></span>
-				            　<span @click="toggle(cart);" class="nav3"></span>
-				        <span @click="toggle(my);" class="nav4"></span>
+		   		 		<div class="navs">				     
+									<div @click="toggle(home);" class="nav1">
+											<img src="../../data/images/index/btm1.png"  v-if="selected"  @click="loveicon()">
+										  <img src="../../data/images/index/btm5.png"  v-else="!selected"  @click="loveicon()">	
+									</div>
+									<div @click="toggle(brand);" class="nav2">
+										<img src="../../data/images/index/btm2.png" v-if="selected1"  @click="loveicon1()">
+										<img src="../../data/images/index/btm6.png"  v-else="!selected1"  @click="loveicon1()">										
+									</div>
+									<div @click="toggle(cart);" class="nav3">
+											<img src="../../data/images/index/btm3.png"  v-if="selected2"  @click="loveicon2()">
+										  <img src="../../data/images/index/btm7.png"  v-else="!selected2"  @click="loveicon2()">	
+									</div>
+									<div @click="toggle(my);" class="nav4">
+										<img src="../../data/images/index/btm4.png"  v-if="selected3"  @click="loveicon3()">
+										<img src="../../data/images/index/btm8.png"  v-else="!selected3"  @click="loveicon3()">	
+									</div>
+				      
 		   		 		</div>	    　　　　　
 		    　　</nav>
 	     <component :is="msg"></component> 
@@ -25,7 +38,11 @@
             brand: "brand", 
             cart:"cart",
             my:"my",
-            msg: 'home'
+            msg: 'home',
+            selected: 1,
+            selected1: 1,
+            selected2: 1,
+            selected3: 1
          };
      },
     components:{
@@ -37,7 +54,31 @@
      methods: {
          toggle (n) {
              this.msg = n;
-         }
+         },
+         loveicon() {
+						this.selected = 1;
+						this.selected1 = 1;
+						this.selected2 = 1;
+						this.selected3 = 1;
+				},
+				loveicon1() {
+						this.selected1 = 0;
+						this.selected = 0;
+						this.selected2 = 1;
+						this.selected3 = 1;
+				},
+				loveicon2() {
+						this.selected2 = 0;
+						this.selected = 0;
+						this.selected1 = 1;
+						this.selected3 = 1;
+				},
+				loveicon3() {
+						this.selected3 = 0;
+						this.selected= 0;
+						this.selected1 = 1;
+						this.selected2 = 1;
+				}	
      }   
   }
 </script>
@@ -78,13 +119,16 @@
 		}
 		.navs{
 			 position: relative;
+			 display: flex;
+		}
+		.navs img{
+			width: 1.18rem;
+			height: 1.18rem;
 		}
 		.nav1,.nav2,.nav3,.nav4{	
 			 display: block;
 			 width: 1.18rem;
 			 height: 1.18rem;
-			 background: url('../../data/images/index/btm1.png');
-			 background-size: 100% 100%;
 			 position: absolute;
 			 top:-0.2rem;
 		}
@@ -92,18 +136,12 @@
 			 left:0.2rem;
 		}
 		.nav2{
-			background: url('../../data/images/index/btm2.png');
-			background-size: 100% 100%;
 			left:29%;
 		}
 		.nav3{
-			background: url('../../data/images/index/btm3.png');
-			background-size: 100% 100%;
 			left:56%;
 		}
 		.nav4{
-			background: url('../../data/images/index/btm4.png');
-			background-size: 100% 100%;
 			right:0.2rem;
 		}
 		

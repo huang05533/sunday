@@ -59,15 +59,30 @@
 		</ul>
 
 		<div class="index-box">
-	   		 <nav class="nav">
-   		 		<div class="navs">
-   		 			 <span @click="back();" class="nav1"></span>	  		 			
-		            　 　　<span class="nav2"></span>
-		            　　　 <span  class="nav3"></span>
-		        	<span  class="nav4"></span>
+	   		<nav class="nav">
+   		 		<div class="navs">				     
+					<div @click="back()" class="nav1">
+							<img src="../../data/images/index/btm1.png"  v-if="selected"  @click="loveicon()">
+						  <img src="../../data/images/index/btm5.png"  v-else="!selected"  @click="loveicon()">	
+					</div>
+					<div @click="back()" class="nav2">
+						<img src="../../data/images/index/btm2.png" v-if="selected1"  @click="loveicon1()">
+						<img src="../../data/images/index/btm6.png"  v-else="!selected1"  @click="loveicon1()">										
+					</div>
+					<div @click="back()" class="nav3">
+							<img src="../../data/images/index/btm3.png"  v-if="selected2"  @click="loveicon2()">
+						  <img src="../../data/images/index/btm7.png"  v-else="!selected2"  @click="loveicon2()">	
+					</div>
+					<div @click="back()" class="nav4">
+						<img src="../../data/images/index/btm4.png"  v-if="selected3"  @click="loveicon3()">
+						<img src="../../data/images/index/btm8.png"  v-else="!selected3"  @click="loveicon3()">	
+					</div>
    		 		</div>	    　　　　　
-    　　　　	</nav> 			
+		    　　</nav> 			
    		 </div>
+   		 
+   		 
+   		 
 	</div>
 </template>
 
@@ -77,7 +92,11 @@ import { Toast } from 'mint-ui'
   	data(){
   		return{
   			list1:'',
-  			list2:''
+  			list2:'',
+  			selected: 1,
+            selected1: 1,
+            selected2: 1,
+            selected3: 1
   		}
   	},
      methods: {  
@@ -90,7 +109,31 @@ import { Toast } from 'mint-ui'
 		t(){
 			this.$store.commit('add',1);
 			Toast('添加成功！')
-		}
+		},
+		loveicon() {
+			this.selected = 1;
+			this.selected1 = 1;
+			this.selected2 = 1;
+			this.selected3 = 1;
+		},
+		loveicon1() {
+			this.selected1 = 0;
+			this.selected = 0;
+			this.selected2 = 1;
+			this.selected3 = 1;
+		},
+		loveicon2() {
+			this.selected2 = 0;
+			this.selected = 0;
+			this.selected1 = 1;
+			this.selected3 = 1;
+		},
+		loveicon3() {
+			this.selected3 = 0;
+			this.selected= 0;
+			this.selected1 = 1;
+			this.selected2 = 1;
+		}	
      },
      mounted(){
      	this.$http.get('./data/my.json')
@@ -115,6 +158,44 @@ import { Toast } from 'mint-ui'
 	}
 </style>
 <style scoped>
+	.top{
+		height: 0.8rem;
+		position: relative;
+		padding-top:0.1rem;
+		background: #F5F5F5;
+	}
+	.loadimg{
+		 width: 0.7rem;
+		 height: 0.7rem;
+		 position: absolute;
+		 left:0.2rem;
+	}
+	.t-tex1,.t-tex2{
+		margin:0px;
+		position: absolute;
+		left:1rem;
+		color:#191919;
+		font-size:.26rem;
+	}
+	.t-tex2{
+		top:0.5rem;
+		color:#6E6E6E;
+		font-size:.24rem;
+	}
+	.t-open{
+		width: 1.28rem;
+		position: absolute;
+	    font-size: .24rem;
+	    color: #fff;
+	    height: .5rem;
+	    line-height: .5rem;
+	    text-align: center;
+	    right: .2rem;
+	    top: 50%;
+	    margin-top: -.25rem;
+	    border-radius: 1rem;
+	    background: #191919;
+	}
 	.nav,.navs{
 		bottom:-1px;
 	}
@@ -138,6 +219,7 @@ import { Toast } from 'mint-ui'
 	    left: 1rem;
 	    top: 0;
 	    width: 5.4rem;
+	    height: ;
 	    line-height: 0.8rem;
 	    margin:0px;
 	}
@@ -314,7 +396,7 @@ import { Toast } from 'mint-ui'
 	    height: .38rem;
 		padding-left: 0.2rem;
 	}	
-	.ne-pri{
+	.new-li .ne-pri{
 		position: absolute;
 		bottom:0.32rem;
 		right:0.3rem;

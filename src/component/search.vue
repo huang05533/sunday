@@ -108,27 +108,12 @@
 	.cha{
 		padding: 0.1rem;
 		position: absolute;
-		right: 0px;
-		top: 0.2rem;
-	    background-color: #888;
+		right: 0.2rem;
+		top: 0rem;
 	    width: .2rem;
 	    height: .2rem;
-	    border-radius: 50%;
-	    transform: translate(-50%,-50%);
-	}
-	.cha:after,.cha:before{
-		content: " ";
-	    position: absolute;
-	    top: 50%;
-	    left: 50%;
-	    width: .28em;
-	    height: .03em;
-	    overflow: hidden;
-	    background-color: #fff;
-        transform: translate(-50%,-50%) rotate(45deg);
-	}
-	.cha:after{
-		 transform: translate(-50%,-50%) rotate(-45deg);
+	    background-image: url('../../data/images/shopbag/del.png');
+	    background-size: 100% 100%;
 	}
 	.ch-btn{
 		position: absolute;

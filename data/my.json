@@ -61,63 +61,93 @@
 	"pros2":[
 		{
 			"images":"./data/images/index/lit1.png",
-			"title":"第2个尤妮佳第2个尤妮佳第2个尤妮佳",
-			"des":"￥72"
-		},
-		{
-			"images":"./data/images/index/lit3.png",
-			"title":"第2个尤妮佳第2个尤妮佳第2个尤妮佳",
-			"des":"￥12"
-		},
-		{
-			"images":"./data/images/index/lit2.png",
-			"title":"第2个尤妮佳第2个尤妮佳第2个尤妮佳",
-			"des":"￥14"
-		},
-		{
-			"images":"./data/images/index/lit4.png",
-			"title":"第2个尤妮佳第2个尤妮佳第2个尤妮佳",
-			"des":"￥72"
-		},
-		{
-			"images":"./data/images/index/lit5.png",
-			"title":"第2个尤妮佳第2个尤妮佳第2个尤妮佳",
-			"des":"￥12"
-		},
-		{
-			"images":"./data/images/index/lit3.png",
-			"title":"第2个尤妮佳第2个尤妮佳第2个尤妮佳",
-			"des":"￥14"
-		},
-		{
-			"images":"./data/images/index/lit1.png",
-			"title":"第2个尤妮佳第2个尤妮佳第2个尤妮佳",
+			"title":"ISHIZAWA LABS 石泽研究所 毛孔抚子日本大米面膜 10片",
 			"des":"￥72"
 		},
 		{
 			"images":"./data/images/index/lit2.png",
-			"title":"第2个尤妮佳第2个尤妮佳第2个尤妮佳",
-			"des":"￥12"
-		},
-		{
-			"images":"./data/images/index/lit5.png",
-			"title":"第2个尤妮佳第2个尤妮佳第2个尤妮佳",
-			"des":"￥14"
-		},
-		{
-			"images":"./data/images/index/lit1.png",
-			"title":"第2个尤妮佳第2个尤妮佳第2个尤妮佳",
-			"des":"￥72"
-		},
-		{
-			"images":"./data/images/index/lit4.png",
-			"title":"第2个尤妮佳第2个尤妮佳第2个尤妮佳",
-			"des":"￥12"
+			"title":"LION 狮王 PAIRACNE粉刺暗疮药膏 14g",
+			"des":"￥65"
 		},
 		{
 			"images":"./data/images/index/lit3.png",
-			"title":"第2个尤妮佳第2个尤妮佳第2个尤妮佳",
-			"des":"￥14"
+			"title":"FREEPLUS 芙丽芳丝 净润洗面乳洗面奶 100g",
+			"des":"￥114"
+		},
+		{
+			"images":"./data/images/index/lit4.png",
+			"title":"Unicharm 尤妮佳 化妆棉超吸收省水1/2 40片",
+			"des":"￥22"
+		},
+		{
+			"images":"./data/images/index/lit5.png",
+			"title":"安耐晒2018新版金瓶清透防水防晒护肤乳 60ml",
+			"des":"￥75"
+		},
+		{
+			"images":"./data/images/index/lit6.png",
+			"title":"CUREL 珂润 洁颜泡沫 150ML",
+			"des":"￥124"
+		},
+		{
+			"images":"./data/images/index/lit7.png",
+			"title":"FANCL 芳珂 新版无添加纳米净化卸妆油 120ML",
+			"des":"￥32"
+		},
+		{
+			"images":"./data/images/index/lit8.png",
+			"title":"DAISO 大创 ER药用胎盘素美白精华 30ml",
+			"des":"￥65"
+		},
+		{
+			"images":"./data/images/index/lit9.png",
+			"title":"ROHTO 乐敦 CC美白祛斑祛痘印面膜 20片",
+			"des":"￥59"
+		},
+		{
+			"images":"./data/images/index/lit10.png",
+			"title":" 克丽贝蒂 凡尔赛玫瑰美白提亮面膜 蓝色 1片装",
+			"des":"￥79"
+		},
+		{
+			"images":"./data/images/index/lit11.png",
+			"title":"SHISEIDO 资生堂 FWB妆前隔离乳霜 35g",
+			"des":"￥58"
+		},
+		{
+			"images":"./data/images/index/lit12.png",
+			"title":"井田 完美雕刻五色眼影盘 #14 梅子色 3g",
+			"des":"￥98"
+		},
+		{
+			"images":"./data/images/index/lit13.png",
+			"title":"DAISO 大创 ER药用胎盘素美白精华 30ml",
+			"des":"￥95"
+		},
+		{
+			"images":"./data/images/index/lit14.png",
+			"title":"ROHTO 乐敦 CC美白祛斑祛痘印面膜 20片",
+			"des":"￥119"
+		},
+		{
+			"images":"./data/images/index/lit15.png",
+			"title":" 克丽贝蒂 凡尔赛玫瑰美白提亮面膜 蓝色 1片装",
+			"des":"￥279"
+		},
+		{
+			"images":"./data/images/index/lit16.png",
+			"title":"SHISEIDO 资生堂 FWB妆前隔离乳霜 35g",
+			"des":"￥158"
+		},
+		{
+			"images":"./data/images/index/lit17.png",
+			"title":"井田 完美雕刻五色眼影盘 #14 梅子色 3g",
+			"des":"￥98"
+		},
+		{
+			"images":"./data/images/index/lit18.png",
+			"title":"井田 完美雕刻五色眼影盘 #14 梅子色 3g",
+			"des":"￥118"
 		}
 		
 	],

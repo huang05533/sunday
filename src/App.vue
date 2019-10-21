@@ -2,8 +2,6 @@
   <div id="app">
      <router-view></router-view>
   </div>
-
-
 </template>
 
 
@@ -15,17 +13,12 @@ export default {
 	      msg: 'Welcome to Your Vue.js App'
 	    }
 	  },
-	  methods:{
-		  	
-	  } ,
 	  mounted(){
 		  	 window.onresize = getRem;
 			    function getRem(){
 			        document.documentElement.style.fontSize = document.documentElement.offsetWidth / 7.5+'px';
 			    }
-			    getRem();
-						
-			    
+			    getRem();    
 		 }
 }
 </script>
@@ -41,11 +34,18 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
-h1, h2 {
+p{
+	font-size:0.2rem;
+}
+h1, h2,h3{
   font-weight: normal;
 }
-
+h3{
+	font-size: 0.3rem;
+}
+div{
+	font-size: 0.26rem;
+}
 ul {
   list-style-type: none;
   padding: 0;
@@ -55,7 +55,6 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-
 a {
   color: black;
   text-decoration: none;

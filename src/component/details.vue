@@ -21,14 +21,14 @@
         </mt-swipe>
 		
 		<div class="det-title">
-			<div class="det-slogan">牙齿美容隐藏年龄秘密</div>
+			<div class="det-slogan">晒不黑的经典款</div>
 			<div class="det-describ">
 				<div class="det-icon">自营</div>
-					LION 狮王 White&amp;White特效美白牙膏 150g
+					ANESSA 安耐晒金瓶防晒乳 SPF50+・PA++++ 60ml*2瓶
 				</div>
 			<div class="det-price">
-				<span class="final-price">¥24</span>
-				<span class="origin-price">¥29</span>
+				<span class="final-price">¥324</span>
+				<span class="origin-price">¥369</span>
 			</div>
 		</div>
 				
@@ -37,22 +37,22 @@
 		        <div class="det-item">
 		        	<img src="../../data/images/shopbag/dt-bg1.png" alt="" />
 	        		<div class="bundle-count col">1件</div>
-	        		<div class="bundle-price col">单件¥24.00</div>
+	        		<div class="bundle-price col">单件¥324.00</div>
 		        </div>
 		        <div class="det-item">
 		        	<img src="../../data/images/shopbag/dt-bg.png" alt="" />
 	        		<div class="bundle-count">2件</div>
-	        		<div class="bundle-price">单件¥15.50</div>
+	        		<div class="bundle-price">单件¥315.50</div>
 		        </div>
 		        <div class="det-item">
 		        	<img src="../../data/images/shopbag/dt-bg.png" alt="" />
 	        		<div class="bundle-count">8件</div>
-	        		<div class="bundle-price">单件¥8.75</div>
+	        		<div class="bundle-price">单件¥308.75</div>
 		        </div>
 		        <div class="det-item">
 		        	<img src="../../data/images/shopbag/dt-bg.png" alt="" />
 	        		<div class="bundle-count">10件</div>
-	        		<div class="bundle-price">单件¥6.10</div>
+	        		<div class="bundle-price">单件¥296.10</div>
 		        </div>
 		      </div>
 		</div>
@@ -74,7 +74,8 @@
 			<div class="det-coll">
 				<div class="det-btn1">
 					<div class="coll-icon">
-						<img src="../../data/images/shopbag/coll1.png" class="collimg coll1">
+						<img src="../../data/images/shopbag/coll1.png" class="collimg" v-if="selected"  @click="loveicon();lovetext()">
+						<img src="../../data/images/shopbag/coll2.png" class="collimg" v-else="!selected"  @click="loveicon();lovetext1()">
 					</div>
 					<p>收藏</p>
 				</div>
@@ -156,6 +157,7 @@
 	export default{
 		data(){
 			return {
+			  selected: true,
 			  msg:'',
 		      pro5: [			 	 
 				{
@@ -219,7 +221,16 @@
 		    getLibrary: function(){
 				this.$store.commit('add',1);
 				Toast('添加成功！')
-		    }
+		    },
+			loveicon() {
+				this.selected = !this.selected;
+			},
+			lovetext(){
+				Toast('收藏成功！')
+			},
+			lovetext1(){
+				Toast('取消收藏！')
+			}
 		},
 		mounted(){		
 			
@@ -243,7 +254,7 @@
 	    height:0px;
   	}
   	.huang .mint-swipe-indicators{
-  		bottom:-0.2rem;
+  		bottom:0rem;
   	}
   	.huang .mint-swipe-indicator{
 	  	border-radius: 50%;
@@ -451,6 +462,7 @@
 		text-align: left;
 		position: relative;
 	    margin: 0;
+	    margin-top:0.2rem;
 	    z-index: 1;
 	}
 	.final-price{

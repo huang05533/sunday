@@ -95,17 +95,19 @@
 					</div>
 					<div class="sub-title">不含运费和综合税</div>
 				</div>
-				<button class="counter-btn">结算郑州保税仓({{num}})</button>
+				<button class="counter-btn" @click="addprice()">结算郑州保税仓({{num}})</button>
 			</div>
 		</div>
 	
 	
 	
 		<div class="zui"></div>
+		<div class="zui"></div>
 	</div>
 </template>
 
 <script>
+	import { Toast } from 'mint-ui'
 	export default{
 		data(){
 			return{
@@ -160,6 +162,9 @@
 		methods:{
 			back5(){
 				this.$router.replace('/home')
+			},
+			addprice(){
+				Toast('结算成功！')
 			},
 			
 			//总价总数量方法   方便调用   再次多写了一次[可以跟初始化封装为一个方法]
