@@ -37,7 +37,6 @@
 		methods:{
 			t(){
 				Toast('登录成功！')
-//				this.$router.replace('/home')
 			}
 		}
 	}

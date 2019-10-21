@@ -57,14 +57,7 @@
 				</div>	
 			</li>
 		</ul>
-		
-		
-		
-		
-		
-		
-		
-		
+
 		<div class="index-box">
 	   		 <nav class="nav">
    		 		<div class="navs">
@@ -75,14 +68,11 @@
    		 		</div>	    　　　　　
     　　　　	</nav> 			
    		 </div>
-   		 <!--<div @click="back()">返回首页</div>-->
-   		 
-		 
 	</div>
 </template>
 
 <script>
-	import { Toast } from 'mint-ui'
+import { Toast } from 'mint-ui'
   export default {
   	data(){
   		return{
@@ -94,15 +84,6 @@
 		back(){
 			this.$router.replace('/home')
 		},
-//		back1(){
-//			this.$router.replace('/brand')
-//		},
-//		back2(){
-//			this.$router.replace('/cart')
-//		},
-//		back3(){
-//			this.$router.replace('/my')
-//		},
 		back4(){
 			this.$router.replace('/home/details')
 		},
@@ -361,7 +342,6 @@
 		margin-top: 0px;
 		padding-left: 0.2rem;
 		color:black;
-		
 	}
 	.addbag{
 		position: absolute;
@@ -374,5 +354,4 @@
 	    background: url('../../data/images/index/beauty/pad.png');
 	    background-size: 100% 100%;
 	}
-		
 </style>

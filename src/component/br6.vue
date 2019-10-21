@@ -24,11 +24,7 @@
 					</div>
 					<div class="icc-te">{{v.des}}</div>
 				</li>
-			</ul>
-			
-			
-			
-			
+			</ul>	
 		</div>
 	</div>
 </template>
@@ -50,9 +46,7 @@
 			})
 			.then(function () {		
 			})
-	    }
-		
-		
+	   }	
 	}
 </script>
 

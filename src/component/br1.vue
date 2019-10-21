@@ -189,8 +189,6 @@
 		right: 0.2rem;
 		width: 5.2rem;
 		background-color: white;
-		/*height: 14rem;*/
-		/*border: 1px solid blue;*/
 	}
 </style>
 

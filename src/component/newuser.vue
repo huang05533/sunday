@@ -29,7 +29,6 @@
 		back3(){
 			this.$router.replace('/my')
 		}
-
      }   
   }
 </script>

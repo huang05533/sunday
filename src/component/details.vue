@@ -1,7 +1,6 @@
 <template>
 	<div class="det-box">
 		<router-link to="/load">
-			
 			<div class="top">
 				<img src="../../data/images/index/load.png" alt="" class="loadimg">
 					<p class="t-tex1">豌豆公主  注册送1088元大礼包</p> 
@@ -20,15 +19,13 @@
             <mt-swipe-item><img src="../../data/images/shopbag/lion2.png"></mt-swipe-item>
             <mt-swipe-item><img src="../../data/images/shopbag/lion3.png"></mt-swipe-item>
         </mt-swipe>
-        
-        
 		
 		<div class="det-title">
 			<div class="det-slogan">牙齿美容隐藏年龄秘密</div>
 			<div class="det-describ">
 				<div class="det-icon">自营</div>
-						LION 狮王 White&amp;White特效美白牙膏 150g
-			</div>
+					LION 狮王 White&amp;White特效美白牙膏 150g
+				</div>
 			<div class="det-price">
 				<span class="final-price">¥24</span>
 				<span class="origin-price">¥29</span>
@@ -69,7 +66,6 @@
 				<div class="intro1 " style="color: #9E9E9E"><i></i>跨境商品</div>
 			</div>
 			<div class="intro-next">
-				
 			</div>
 		</div>
 		
@@ -143,18 +139,12 @@
 							</div>
 							<div class="acti-a2">每满200元减40元,最高减200元</div>
 						</li>
-					</ul>
-					
+					</ul>					
 				</div>
 				<div class="intro-next"></div>
 			</div>
 		</div>
-		
-		
-		
 
-
-		
 		<div class="zui1"></div>
 	</div>
 </template>
@@ -220,7 +210,6 @@
 			home(){
 				this.$router.replace('/home')
 			},
-			
 			actionSheet: function(){
 		      this.sheetVisible = true;
 		    },
@@ -231,16 +220,9 @@
 				this.$store.commit('add',1);
 				Toast('添加成功！')
 		    }
-
 		},
-		mounted(){			
-			if(this.$route.params.m==0){
-				this.msg='水杯'
-			}else if(this.$route.params.m==1){
-				this.msg='纸巾'
-			}else{
-				this.msg='蜂蜜'
-			}
+		mounted(){		
+			
 		}
 	}
 </script>
@@ -273,7 +255,6 @@
 	  	opacity: 1;
 	  	width: 10px;
   	}
-	
 	.mint-actionsheet{
 		border-top-left-radius: .3rem;
     	border-top-right-radius: .3rem;
@@ -434,11 +415,8 @@
 		width: 100%;
 		margin-top: -1.2rem;
 		overflow-y: scroll;
-		/*border: 1px solid red;*/
-		
 	}
 	.det-title{
-		/*border: 1px solid red;*/
 		position: relative;
 	    padding:0.2rem;
 	}
@@ -490,18 +468,13 @@
     	line-height: .2rem;
 	}
 	.det-bun{
-    	/*padding: .24rem .3rem;*/
     	overflow: scroll;
     	width: 96%;
     	height: 1rem;
     	margin:0 auto;
     	margin-bottom: -0.3rem;
-    	/*border: 1px solid red;*/
 	}
 	.det-bun-box{
-		/*position: relative;*/
-		/*padding: .24rem .3rem;*/
-    	/*border: 1px solid red;*/
     	display: flex;
     	flex-direction:row;
 	}
@@ -647,11 +620,9 @@
 	    margin-top: 0.1rem;
 	}
 	.activity{
-		/*border:1px solid red;*/
 		border-bottom: .12rem solid #f5f5f5;
 	}
 	.acti-box{
-		/*border:1px solid red;*/
 		height: 1.5rem;
 		position: relative;
 	    border-bottom: 1px solid #e6e6e6;
@@ -660,7 +631,6 @@
 	    display: flex;
 	}
 	.acti-box:before {
-		/*border:1px solid red;*/
 	    position: absolute;
 	    content: '';
 	    left: -.3rem;
@@ -720,8 +690,6 @@
 	.mint-actionsheet{
 		background:#fff;
 	}
-	
-	
 	.zui1{
 		height: 1rem;
 	}

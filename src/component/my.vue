@@ -20,13 +20,9 @@
 	   			</li>
 	   		</ul>
    		</div>
-   		
-   		<!--<h3>添加的数量为---{{$store.state.count}}</h3>-->
-   		
-		<!--<button @click="home()">返回首页</button>-->	
+
 		<div class="myorder">
 			<div class="or-title">我的订单</div>
-			<!--待付款-->
 			<div class="order-nav">
 				<div class="or-nav">
 					<i class="or-icon1"></i>
@@ -82,13 +78,8 @@
 					<i class="or-icon11 or-icon66"></i>
 					<div>关于我们</div>
 				</div>
-				
 			</div>
 		</div>
-		
-		<!--<h3>添加的数量为---{{$store.state.count}}</h3>-->
-		
-		
 		<div class="zui"></div>
 	</div>
 </template>
@@ -100,15 +91,6 @@ export default {
 			
 		}
 	},
-	methods:{
-//		home(){
-//			this.$router.go(-1)
-//		}
-		
-	},
-	mounted(){
-				 
-	}
 }
 </script>
 <style>

@@ -41,12 +41,7 @@
 					<div class="br-sel">ビンテージ</div>
 		        </div>
 			</div>
-		</div>
-		
-		
-
-	            
-	            
+		</div>      
 	     <component :is="msg"></component>  
 	</div>
 </template>
@@ -73,7 +68,6 @@
 	  			br6:"br6",
 	  			br7:"br7",
 	  			msg: 'br1'
-	  			
 		     } 
 		  },
 		components:{
@@ -90,8 +84,6 @@
 	             this.msg = n;
 	         }
 		}
-
-		
 	}
 </script>
 
@@ -119,8 +111,6 @@
 		width: 2.3rem;
 		height: 14.5rem;
 		background: #fff;
-		
-		/*border:1px solid blue;*/
 	}
 	.br-left>div{
 		padding-left: 0.25rem;

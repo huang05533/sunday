@@ -26,7 +26,6 @@
             cart:"cart",
             my:"my",
             msg: 'home'
-            //默认选中home子组件
          };
      },
     components:{

@@ -72,9 +72,7 @@
 			})
 			.then(function () {		
 			})
-	    }
-		
-		
+	   }	
 	}
 </script>
 

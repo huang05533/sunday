@@ -87,9 +87,10 @@
         	     	
         	<div class="cra-bot">
         		<div class="crazy-items">   
-			        <div class="crazy-li
-			        	" v-for="(v,i) in pros3">
-			        	<img :src="v.images" alt="" />
+			        <div class="crazy-li" v-for="(v,i) in pros3">
+			        	<router-link to="/details">
+			        		<img :src="v.images" alt="" />
+	    				</router-link>			        	
 			        	<div class="crazy-price">
 							{{v.des1}}&nbsp;<del>{{v.des2}}</del>
 						</div>
@@ -606,7 +607,6 @@ export default {
 		padding-right: 0.2rem;
 	}
 	.new-li{
-		/*width: 2.226rem;*/
 		width: 3.4rem;
 		height: 6rem;
 		background: #fafafa;
@@ -651,7 +651,6 @@ export default {
 		width: 3.2rem;
 		text-align: center;
 	    height: 3.2rem;
-	    /*border:1px solid red;*/
 	}
 	.new-ti{
 	    margin: .1rem 0;
@@ -702,7 +701,6 @@ export default {
 		margin-top: 0px;
 		padding-left: 0.2rem;
 		color:black;
-		
 	}
 	.addbag{
 		position: absolute;
@@ -715,9 +713,6 @@ export default {
 	    background: url('../../data/images/index/beauty/pad.png');
 	    background-size: 100% 100%;
 	}
-	
-	
-	
 	.zui{
 		height: 1rem;
 	}

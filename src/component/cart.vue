@@ -13,8 +13,6 @@
 				
 				<div class="cart-box1">
 					<input type="radio" class="chek"></input>
-					<!--<img v-if="v.selected" class="chek" @click="radios(i)" src="../../data/images/shopbag/red-icon.png" />
-					<img v-else="!v.selected" class="chek" @click="radios(i)" src="../../data/images/shopbag/select-icon.png" />-->
 					<div class="hou-name">郑州保税仓</div>
 					<div class="flex-padding"></div>
 					<div class="my-coupon">优惠券</div>
@@ -34,21 +32,22 @@
 				</div>
 				
 				
-				<!--商品选项2-->
+				<!--商品选项1-->
 				<div class="cart-group" v-for="(v,i) in con2">
 					<div class="cart-group-box">
 						<div class="cart-items">
 							<div class="cart-items1">
 								<div class="sec-icon">
-									<!--<input type="radio" class="chek" v-model="picked" value="166" id="va3"></input>-->
 									<img v-if="v.selected" class="chek" @click="radios(i)" src="../../data/images/shopbag/red-icon.png" />
 									<img v-else="!v.selected" class="chek" @click="radios(i)" src="../../data/images/shopbag/select-icon.png" />
 								</div>
 							</div>
 							<div class="cart-items-main">
-								<div class="cart-imgs">
-									<img :src="v.images" alt="" />
-								</div>
+								<router-link to="/details">
+									<div class="cart-imgs">
+										<img :src="v.images" alt="" />
+									</div>
+						    	</router-link>  
 								<div class="cart-items-text">
 									<div class="cart-te-name">
 										{{v.name}}
@@ -85,8 +84,6 @@
 		</div>
 		
 		
-		
-		
 		<!--结算部分-->
 		<div class="counter">
 			<div class="counter-box">
@@ -113,9 +110,7 @@
 		data(){
 			return{
 				con2:'',
-				//默认总价
 				money: 0,
-				//默认总数量
 				num: 0,
 				con2: [
 				{
@@ -145,18 +140,15 @@
 					num: 1,
 					selected: false	
 				}
-				
 			]
 			}
 		},
-		//初始化加载   显示总价总数量
 		created() {
 			var price = 0;
 			var numb = 0;
 			var list = this.con2;
 			
 			for(var i = 0; i < list.length; i++) {
-				//当前选中
 				if(list[i].selected) {
 					price += list[i].num * list[i].money;
 					numb += list[i].num;
@@ -166,9 +158,6 @@
 			this.num = numb;
 		},
 		methods:{
-//			pre(){
-//				this.$router.go(-1)
-//			},
 			back5(){
 				this.$router.replace('/home')
 			},
@@ -217,18 +206,7 @@
 			},
 
 	},
-	mounted(){
-//   	this.$http.get('./data/my.json')
-//		.then((response)=>{
-//		this.con2=response.data.con2;
-//		})
-//		.catch(function (error) {	
-//			console.log(error);
-//		})
-//		.then(function () {		
-//		})
-		
-		
+	mounted(){	
      }
 		
 	}

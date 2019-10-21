@@ -24,36 +24,30 @@
 					</div>
 					<div class="icc-te">{{v.des}}</div>
 				</li>
-			</ul>
-			
-			
-			
-			
+			</ul>	
 		</div>
 	</div>
 </template>
 
 <script>
-	export default{
-		data(){
-			return{
-				con3:'',
-			}
-		},
-		mounted(){
-	     	this.$http.get('./data/my.json')
-			.then((response)=>{
-			this.con3=response.data.con3;
-			})
-			.catch(function (error) {	
-				console.log(error);
-			})
-			.then(function () {		
-			})
-	    }
-		
-		
-	}
+export default{
+	data(){
+		return{
+			con3:'',
+		}
+	},
+	mounted(){
+     	this.$http.get('./data/my.json')
+		.then((response)=>{
+		this.con3=response.data.con3;
+		})
+		.catch(function (error) {	
+			console.log(error);
+		})
+		.then(function () {		
+		})
+   }	
+}
 </script>
 
 <style>

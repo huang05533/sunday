@@ -26,8 +26,6 @@
 				</li>
 				<div class="zui"></div>
 		</ul>
-		
-		
 	</div>
 </template>
 
@@ -49,11 +47,7 @@
 			})
 			.then(function () {		
 			})
-	     }
-		
-		
-		
-		
+	    }
 	}
 </script>
 
