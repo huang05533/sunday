@@ -74,80 +74,22 @@
         
         <div class="sli5">限时秒杀</div>
         <div class="crazy-box">
-        	<div class="crazy-time">       		
-				 <swiper :options="swiperOptionSwp4">
-			        <!--<swiper-slide>
-			        	<div class="time-box tim-active">
-			        		<div class="tim1 tim11">08:00</div>
-			        		<div class="tim-text tim-text-active">
-								<i style="color:#f44903" class="active-i">抢购中</i>
-							</div>
-			        	</div>
-			        </swiper-slide>			        	
-			        <swiper-slide>
-						<div class="time-box" >
-			        		<div class="tim1">08:00</div>
-			        		<div class="tim-text">
-								<i style="color:#f44903">抢购中</i>
-							</div>
-			        	</div>
-			        </swiper-slide>
-			        <swiper-slide>
-			        	<div class="time-box">
-			        		<div class="tim1">09:00</div>
-			        		<div class="tim-text">
-								<i style="color:#f44903">即将开始</i>
-							</div>
-			        	</div>
-			        </swiper-slide>
-			        <swiper-slide>
-			        	<div class="time-box">
-			        		<div class="tim1">10:00</div>
-			        		<div class="tim-text">
-								<i style="color:#f44903">即将开始</i>
-							</div>
-			        	</div>
-			        </swiper-slide>
-			        <swiper-slide>
-			        	<div class="time-box">
-			        		<div class="tim1">11:00</div>
-			        		<div class="tim-text">
-								<i style="color:#f44903">即将开始</i>
-							</div>
-			        	</div>
-			        </swiper-slide>
-			        <swiper-slide>
-			        	<div class="time-box">
-			        		<div class="tim1">12:00</div>
-			        		<div class="tim-text">
-								<i style="color:#f44903">即将开始</i>
-							</div>
-			        	</div>
-			        </swiper-slide>
-			        <swiper-slide>
-			        	<div class="time-box">
-			        		<div class="tim1">13:00</div>
-			        		<div class="tim-text">
-								<i style="color:#f44903">即将开始</i>
-							</div>
-			        	</div>
-			        </swiper-slide>-->
-			    </swiper>
+        	<div class="crazy-first">
+        		<div class="crazy-time" > 
+		        	<div class="time-box" v-for="(v,i) in con5" :class="{timecolor:i==colornum}" @click="change(i)">
+		        		<div class="tim1" :class="{color2:i==colornum}" @click="change(i)">{{v.time}}</div>
+		        		<div class="tim-text">
+							<i style="color:#f44903" class="active-i">{{v.status}}</i>
+						</div>
+		        	</div>
+	        	</div>
         	</div>
-        	
-        	<div class="crazy-items">
-        		<!--<ul class="crazy-items-ul">
-    				<li v-for="(v,i) in list" class="crazy-li">
-    					<div class="items1">
-    						<img :src="v.images" >
-    					</div>						
-						<h3>{{v.title}}</h3>
-						<p>{{v.des}}</p>
-					</li>       			
-        		</ul>-->
-				 <swiper :options="swiperOptionSwp3">
-			        <!--<swiper-slide v-for="(v,i) in list3" :key="i">
-			        	<div><img :src="v.images" ></div>
+        	     	
+        	<div class="cra-bot">
+        		<div class="crazy-items">   
+			        <div class="crazy-li
+			        	" v-for="(v,i) in pros3">
+			        	<img :src="v.images" alt="" />
 			        	<div class="crazy-price">
 							{{v.des1}}&nbsp;<del>{{v.des2}}</del>
 						</div>
@@ -156,115 +98,48 @@
 							<span class="cra-btnss">{{v.status}}</span>
 						</div>
 						<p></p>
-			        </swiper-slide>-->
-			        
-			        
-			        
-			        
-			        <!--<swiper-slide>
-			        	<img src="../../data/images/index/lit2.png" alt="" />
-			        	<div class="crazy-price">
-							¥177&nbsp;<del>¥411</del>
-						</div>
-						<div class="cra-tit">为双唇添加魅惑之红</div>
-						<div class="cra-btns">
-							<span class="cra-btnss">已抢光</span>
-						</div>
-						<p></p>
-			        </swiper-slide>
-			        <swiper-slide>
-			        	<img src="../../data/images/index/lit3.png" alt="" />
-			        	<div class="crazy-price">
-							¥159&nbsp;<del>¥168</del>
-						</div>
-						<div class="cra-tit">七效合一有效护肌</div>
-						<div class="cra-btns">
-							<span class="cra-btnss">已抢光</span>
-						</div>
-						<p></p>
-			        </swiper-slide>
-			        <swiper-slide>
-			        	<img src="../../data/images/index/lit4.png" alt="" />
-			        	<div class="crazy-price">
-							¥103&nbsp;<del>¥239</del>
-						</div>
-						<div class="cra-tit">宛若天生好气色</div>
-						<div class="cra-btns">
-							<span class="cra-btnss">已抢光</span>
-						</div>
-						<p></p>
-			        </swiper-slide>
-			        <swiper-slide>
-			        	<img src="../../data/images/index/lit1.png" alt="" />
-			        	<div class="crazy-price">
-							¥63&nbsp;<del>¥89</del>
-						</div>
-						<div class="cra-tit">赋予双唇明艳光泽妆感</div>
-						<div class="cra-btns">
-							<span class="cra-btnss">已抢光</span>
-						</div>
-						<p></p>
-			        </swiper-slide>
-			        <swiper-slide>
-			        	<img src="../../data/images/index/lit2.png" alt="" />
-			        	<div class="crazy-price">
-							¥183&nbsp;<del>¥211</del>
-						</div>
-						<div class="cra-tit">七效合一有效护肌</div>
-						<div class="cra-btns">
-							<span class="cra-btnss">已抢光</span>
-						</div>
-						<p></p>
-			        </swiper-slide>
-			        <swiper-slide>
-			        	<img src="../../data/images/index/lit2.png" alt="" />
-			        	<div class="crazy-price">
-							¥177&nbsp;<del>¥411</del>
-						</div>
-						<div class="cra-tit">为双唇添加魅惑之红</div>
-						<div class="cra-btns">
-							<span class="cra-btnss">已抢光</span>
-						</div>
-						<p></p>
-			        </swiper-slide>
-			        <swiper-slide>
-			        	<img src="../../data/images/index/lit3.png" alt="" />
-			        	<div class="crazy-price">
-							¥159&nbsp;<del>¥168</del>
-						</div>
-						<div class="cra-tit">七效合一有效护肌</div>
-						<div class="cra-btns">
-							<span class="cra-btnss">已抢光</span>
-						</div>
-						<p></p>
-			        </swiper-slide>
-			        <swiper-slide>
-			        	<img src="../../data/images/index/lit4.png" alt="" />
-			        	<div class="crazy-price">
-							¥93&nbsp;<del>¥209</del>
-						</div>
-						<div class="cra-tit">富士80年黑科技</div>
-						<div class="cra-btns">
-							<span class="cra-btnss">已抢光</span>
-						</div>
-						<p></p>
-			        </swiper-slide>-->
-			        
-			      </swiper>
-        	</div>
+			        </div>
+	        	</div>
+        	</div>	
         </div>
-          
-        
-         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+		<div class="sli5">权威榜单</div>
+		<ul class="sli5-box-ul">
+			<li class="beau-li" v-for="(v,i) in list1">	
+				<h3 class="beau-ti">{{v.title}}</h3>
+				<div class="beau-1">
+					<div class="flo">
+						<img src="../../data/images/index/sm1-icon.png" alt="" />
+					</div>
+					<img :src="v.images" >
+				</div>						
+				<p class="beau-ti2">{{v.des}}</p>					  
+			</li>
+		</ul>
+		
+		<div class="sli5">猜你喜欢</div>
+		<ul class="new-ul">			
+			<li v-for="(v,i) in con9" class="new-li">
+				<div class="new-timg">
+					<i class="ting-r"></i>
+					<router-link to="/details">
+						<img :src="v.images" class="ting-photo">
+					</router-link>
+					<i class="ting-l"></i>
+				</div>				
+				<h3 class="new-ti">{{v.title}}</h3>					
+				<p class="new-ti2">{{v.des}}</p>
+				<p class="ne-pri">8.5折</p>
+				
+				<div class="addjo" @click="t()">
+					<p class="addj">99%好评</p>
+					<i class="addbag"></i>
+				</div>	
+			</li>
+		</ul>
+		
+		
+		
         <div class="zui"></div>
         
  		
@@ -273,86 +148,42 @@
 
 <script>
 import beauty from '../component/beauty';
-import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
 	data () {
          return {
-         	list:'',
-         	list3:'',
+         	list1:'',
+         	pros3:'',
+         	con5:'',
             beauty: "beauty", 
-            sp: 'beauty',
-            
-            swiperOptionSwp3: {
-		          notNextTick: true,
-		          autoplay: 3000,
-				  direction:'horizontal',
-		          grabCursor : true,
-		          setWrapperSize :true,
-		          autoHeight: true,
-		          pagination : {
-		          	el:'.swiper-pagination',
-         			clickable:true
-		          },
-		          paginationClickable :true,
-		          mousewheelControl : true,
-		          observeParents:true,
-		          debugger: true,
-		       	 slidesPerView: 3,
-          		 spaceBetween: 8,
-		    },
-		    swiperOptionSwp4:{
-		    	notNextTick: true,
-		          autoplay: 3000,
-				  direction:'horizontal',
-		          grabCursor : true,
-		          setWrapperSize :true,
-		          autoHeight: true,
-		          pagination : {
-		          	el:'.swiper-pagination',
-         			clickable:true
-		          },
-		          paginationClickable :true,
-		          mousewheelControl : true,
-		          observeParents:true,
-		          debugger: true,
-		    	slidesPerView: 4,
-		    	spaceBetween: 10
-		    }
+            sp: 'beauty', 
+            colornum:0,
+            con9:''
          };
      },
     components:{
-       beauty,
-       swiper,
-       swiperSlide
+       beauty
     },
 	 mounted(){
 			this.$http.get('./data/my.json')
 			.then((response)=>{
-			this.list=response.data.pros,
-			this.list3=response.data.pros3
+			this.list1=response.data.con8,
+			this.pros3=response.data.pros3,
+			this.con5=response.data.con5,
+			this.con9=response.data.con9
 			})
 			.catch(function (error) {
 			console.log(error);
 			})
 			.then(function () {		
 			})
-			
-			
-//			window.addEventListener("scroll", this.handleScroll);
-//			function handleScroll(){
-//		      	var h =document.documentElement.scrollTop ;
-//			      if(h>30){
-//			        document.documentElementsByClassName('search-box').setAttribute('.fixed-top')
-//			      }else{
-//			        document.documentElementsByClassName('search-box').remove('.fixed-top')
-//			      }
-//		    }
-//			handleScroll();
        },
 	methods:{
 		toggle (n) {
 	         this.sp = n;
-	    }
+	   },
+	   change(i){
+	   		this.colornum=i
+	   }
 	    
 	}
 }
@@ -528,26 +359,43 @@ export default {
 	    padding-bottom: .2rem;
 	    padding-top: .2rem;
 	}
+	.crazy-first{
+		width: 6.9rem;
+		height: 1.2rem;
+		overflow-x: scroll;
+		background-color: white;
+		border-bottom: 1px solid #f44903;
+	}
 	.crazy-box{
-		border:1px solid red;		
+		border:2px solid red;		
 	    min-height: 4.54rem;
 	    position: relative;
 	    width: 6.9rem;
 	    box-sizing: border-box;
 	    margin: 0px auto;
 	    border-radius: 8px;
+	    overflow: hidden;
 	}
 	.crazy-time{
 		position: relative;
-	    height: .88rem;
+	    height: 0.88rem;
 	    margin:0px;
+	    width: 10rem;
 	    margin-bottom: 5px;
-	    border: 1px solid #f44903;
+	    display: flex;
+	    border-bottom: 1px solid #f44903;
+	}
+	.cra-bot{
+		overflow: scroll;
+		margin-top: -0.2rem;
 	}
 	.crazy-items{
 		position: relative;
-	    height: 3.75rem;
+	    height: 3.7rem;
+	    width: 13.2rem;
+	    background-color: white;
 	    overflow: hidden;
+	    display: flex;
 	}
 	.crazy-items-ul{
 		margin-top:0.1rem;
@@ -638,8 +486,8 @@ export default {
 	    border-top-left-radius: .08rem;
 	    border-top-right-radius: .08rem;
 	    overflow: hidden;
-	}
-	.tim-active{
+	}	
+	.timecolor{
 		background-color: red;
 	}
 	.tim1{
@@ -662,15 +510,15 @@ export default {
 	    font-style: normal;
 	    white-space: nowrap;
 	}
-	.tim11{
-	    color: #fff;
+	.color2{
+		color: #fff;
 	    font-size: .32rem;
 	    line-height: .4rem;
 	    text-align: center;
 	    width: 100%;
 	}
-	.tim-text-active{
-	    text-align: center;
+	.time-box:nth-child(1) .tim-text{
+		text-align: center;
 	    font-size: .2rem;
 	    color: #191919;
 	    line-height: .3rem;
@@ -682,6 +530,192 @@ export default {
 	    line-height: .3rem;
 	    height: .3rem;
 	}
+	.sli5-box-ul{
+		height: 2.94rem;
+		margin-top: 0px;
+		overflow: hidden;
+		margin-bottom: 0px;
+	}
+	.beau-li{
+		width: 2.14rem;
+    	height: 2.7rem;
+		border-radius: .2rem;
+		margin-left: 0.1rem;
+		margin-right: 0.1rem;
+		overflow: hidden;
+		background-color: #FAFAFA;
+		position: relative;
+	}
+	.beau-1{
+	    height: 1.5rem;
+	   	border-radius: 0.2rem;
+	    background-color: #FAFAFA;
+	    position: relative;
+	    margin: auto;
+	    z-index: 1;    
+	}
+	.flo{
+		position: absolute;
+		top:0px;
+		left:0.2rem;
+		width: 1.7rem;
+		height: 1.7rem;
+		z-index: 4;
+		padding: 0px;
+	}
+	.beau-1 .flo img{
+		width: 1.7rem;
+		height: 1.6rem;
+	}
+	.beau-1 img{
+		width: 1.5rem;
+	    height: 1.5rem;
+	}
+	.beau-ti{
+		display: inline-block;
+		text-align: center;
+	    border-bottom: 2px solid red;
+	   	margin-top: 0px;
+	    font-size: .24rem;
+	    font-weight: bolder;
+	    max-width: 100%; 
+	    color: black;   
+	}
+	.jiao{
+		position: absolute;
+		bottom:15px;
+		z-index: 2;
+		opacity: 1;
+	}
+	.beau-ti2{
+		color:white;
+		margin:0px;
+		width: 100%;
+		position: absolute;
+		bottom:0px;
+		z-index: 0;
+		height: 0.77rem;
+		line-height: 1.05rem;
+	    border:1px solid red;
+	    font-size: .24rem;
+    	font-weight: bolder;
+		background-color: rgb(208, 45, 58);
+	}
+	.new-ul{
+		margin-top: -0.2rem;
+		padding-right: 0.2rem;
+	}
+	.new-li{
+		/*width: 2.226rem;*/
+		width: 3.4rem;
+		height: 6rem;
+		background: #fafafa;
+		border: 1px solid rgba(230,230,230,.5);
+	    border-radius: .2rem;
+	    overflow: hidden;
+	    margin-top: 0.2rem;
+	    margin-left: 0.15rem;
+	    margin-right: 0rem;
+	    box-sizing: border-box!important;
+	    position: relative;
+	}
+	.new-timg{
+		height: 3rem;
+		box-sizing: border-box;
+	}
+	.ting-r{
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    width: .7rem;
+	    height: .7rem;
+	    line-height: .7rem;
+	    text-align: center;
+	    overflow: hidden;
+		background: url('../../data/images/index/beauty/right-r.png');
+		background-size: 100% 100%;
+	}
+	.ting-l{
+		position: absolute;
+	    left: 0;
+	    bottom: 3rem;
+	    width: .8rem;
+	    height: .8rem;
+	    line-height: .8rem;
+	    text-align: center;
+	    background: url('../../data/images/index/beauty/le.png');
+		background-size: 100% 100%;
+	}
+	.ting-photo{
+		margin-top: 0rem;
+		width: 3.2rem;
+		text-align: center;
+	    height: 3.2rem;
+	    /*border:1px solid red;*/
+	}
+	.new-ti{
+	    margin: .1rem 0;
+	    width: 93%;
+	    height: 1.3rem;
+	    line-height: .38rem;
+	    font-size: .26rem;
+	    overflow: hidden;
+	    text-align: left;  
+	    padding: 0.4rem 0.2rem 0;
+	    align-items: center;
+	    color: #696969;
+	}
+	.new-ti2{
+		margin:0px;
+		text-align: left;
+	    font-size: .3rem;
+	    color: #ee1414;
+	    line-height: .38rem;
+	    height: 0.5rem;
+		padding-left: 0.2rem;
+	}	
+	.ne-pri{
+		position: absolute;
+		bottom:0.45rem;
+		left:0.8rem;
+		border:1px solid red;
+		padding: 0 .06rem;
+		border-radius: .22rem;
+		background: #ea4141;
+		color: #fff;
+		font-size: .18rem;
+		line-height: .28rem;
+		margin-left: .1rem;
+	}
+	.addjo{
+		height: .5rem;
+	    width: inherit;
+	    background: #fff;
+	    border-top: 1px solid rgba(230,230,230,.5);
+	    font-size: .26rem;
+	    line-height: .5rem;
+	    text-align: center;
+	    position: relative;
+	}
+	.addjo .addj{
+		text-align: left;
+		margin-top: 0px;
+		padding-left: 0.2rem;
+		color:black;
+		
+	}
+	.addbag{
+		position: absolute;
+		top:0px;
+		right:0px;
+		width: .4rem;
+		height: 0.4rem;
+	   	margin-top: 0.05rem;
+	    margin-right: .2rem;
+	    background: url('../../data/images/index/beauty/pad.png');
+	    background-size: 100% 100%;
+	}
+	
 	
 	
 	.zui{

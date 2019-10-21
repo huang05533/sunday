@@ -1,7 +1,8 @@
 <template>
 	<div class="det-box">
 		<router-link to="/load">
- 			<div class="top">
+			
+			<div class="top">
 				<img src="../../data/images/index/load.png" alt="" class="loadimg">
 					<p class="t-tex1">豌豆公主  注册送1088元大礼包</p> 
 					<p class="t-tex2">日本优品一站购  正品直邮</p>
@@ -9,16 +10,18 @@
 			</div>
 		</router-link>
 		
-		<swiper :options="swiperOptionSwp1" ref="mySwiper">
-		    <swiper-slide><img src="../../data/images/shopbag/lion1.png" alt="" /></swiper-slide>
-		    <swiper-slide><img src="../../data/images/shopbag/lion2.png" alt="" /></swiper-slide>
-		    <swiper-slide><img src="../../data/images/shopbag/lion3.png" alt="" /></swiper-slide>
-		    <swiper-slide><img src="../../data/images/shopbag/lion4.png" alt="" /></swiper-slide>
-		    <swiper-slide><img src="../../data/images/shopbag/lion1.png" alt="" /></swiper-slide>
-		    <swiper-slide><img src="../../data/images/shopbag/lion2.png" alt="" /></swiper-slide>
-		    <swiper-slide><img src="../../data/images/shopbag/lion3.png" alt="" /></swiper-slide>
-		    <div class="swiper-pagination"  slot="pagination"></div>
-		</swiper>
+				
+		<mt-swipe :auto="5000" class="huang">
+            <mt-swipe-item><img src="../../data/images/shopbag/lion1.png"></mt-swipe-item>
+            <mt-swipe-item><img src="../../data/images/shopbag/lion2.png"></mt-swipe-item>
+            <mt-swipe-item><img src="../../data/images/shopbag/lion3.png"></mt-swipe-item>
+            <mt-swipe-item><img src="../../data/images/shopbag/lion4.png"></mt-swipe-item>
+            <mt-swipe-item><img src="../../data/images/shopbag/lion1.png"></mt-swipe-item>
+            <mt-swipe-item><img src="../../data/images/shopbag/lion2.png"></mt-swipe-item>
+            <mt-swipe-item><img src="../../data/images/shopbag/lion3.png"></mt-swipe-item>
+        </mt-swipe>
+        
+        
 		
 		<div class="det-title">
 			<div class="det-slogan">牙齿美容隐藏年龄秘密</div>
@@ -31,33 +34,32 @@
 				<span class="origin-price">¥29</span>
 			</div>
 		</div>
-		
+				
 		<div class="det-bun">
-			 <swiper :options="swiperOptionSwp2">
-		        <swiper-slide>
+			 <div class="det-bun-box">
+		        <div class="det-item">
 		        	<img src="../../data/images/shopbag/dt-bg1.png" alt="" />
 	        		<div class="bundle-count col">1件</div>
 	        		<div class="bundle-price col">单件¥24.00</div>
-		        </swiper-slide>
-		        <swiper-slide>
+		        </div>
+		        <div class="det-item">
 		        	<img src="../../data/images/shopbag/dt-bg.png" alt="" />
 	        		<div class="bundle-count">2件</div>
 	        		<div class="bundle-price">单件¥15.50</div>
-		        </swiper-slide>
-		        <swiper-slide>
+		        </div>
+		        <div class="det-item">
 		        	<img src="../../data/images/shopbag/dt-bg.png" alt="" />
 	        		<div class="bundle-count">8件</div>
 	        		<div class="bundle-price">单件¥8.75</div>
-		        </swiper-slide>
-		        <swiper-slide>
+		        </div>
+		        <div class="det-item">
 		        	<img src="../../data/images/shopbag/dt-bg.png" alt="" />
 	        		<div class="bundle-count">10件</div>
 	        		<div class="bundle-price">单件¥6.10</div>
-		        </swiper-slide>
-		      </swiper>
+		        </div>
+		      </div>
 		</div>
 		
-		<!--<button @click="t()">按钮</button>-->
 		
 		<div class="intro">
 			<div class="intro-icon">
@@ -73,7 +75,6 @@
 		
 		<!--底部导航栏-->
 		<div class="det-bottom">
-			<!--收藏-->
 			<div class="det-coll">
 				<div class="det-btn1">
 					<div class="coll-icon">
@@ -82,14 +83,12 @@
 					<p>收藏</p>
 				</div>
 			</div>
-			<!--购物袋-->
 			<div class="cart">
 				<div class="cart1">
 					<img src="../../data/images/shopbag/bagg.png" class="cartimg">
 					<p>购物袋</p>
 				</div>
 			</div>
-			<!--加入购物袋-->
 			<div>
 				<div class="page-actionsheet-wrapper">
 					<div id="addCart" class="mint-button mint-button--default mint-button--large" @click="actionSheet">加入购物袋</div>
@@ -99,9 +98,7 @@
 					:closeOnClickModal= false
 			        v-model="sheetVisible">
 			    </mt-actionsheet>
-			</div>
-			
-			
+			</div>			
 		</div>
 		
 		
@@ -158,7 +155,7 @@
 
 
 		
-		<!--<div class="zui1"></div>-->
+		<div class="zui1"></div>
 	</div>
 </template>
 
@@ -169,27 +166,7 @@
 	export default{
 		data(){
 			return {
-				msg:'',
-				swiperOptionSwp1: {
-		          notNextTick: true,
-		          autoplay: 3000,
-				  direction:'horizontal',
-		          grabCursor : true,
-		          setWrapperSize :true,
-		          autoHeight: true,
-		          pagination : {
-		          	el:'.swiper-pagination',
-         			clickable:true
-		          },
-		          paginationClickable :true,
-		          mousewheelControl : true,
-		          observeParents:true,
-		          debugger: true,
-		      },
-		      swiperOptionSwp2: {
-		       	 slidesPerView: 2.5,
-          		 spaceBetween: 30
-		      },
+			  msg:'',
 		      pro5: [			 	 
 				{
 			        name: '图片',
@@ -269,6 +246,34 @@
 </script>
 
 <style>
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	.huang{
+		height: 7.2rem;
+	}
+  	.huang img{
+     	width:100%;
+  	}
+  	.huang .mint-swipe-items-wrap{
+	    padding-bottom:90%;
+	    height:0px;
+  	}
+  	.huang .mint-swipe-indicators{
+  		bottom:-0.2rem;
+  	}
+  	.huang .mint-swipe-indicator{
+	  	border-radius: 50%;
+		height: 8px;
+		width: 8px;
+  	}
+  	.mint-swipe-indicator.is-active{
+	  	background-color: black;
+	  	opacity: 1;
+	  	width: 10px;
+  	}
+	
 	.mint-actionsheet{
 		border-top-left-radius: .3rem;
     	border-top-right-radius: .3rem;
@@ -367,10 +372,6 @@
 		background: url('../../data/images/canclee.png') no-repeat;
 		background-size: 100% 100%;
 	}
-</style>
-
-
-<style scoped>
 	.swiper-container-autoheight, .swiper-container-autoheight .swiper-slide{
  		height: 7.2rem;
  		position: relative;
@@ -385,13 +386,61 @@
  	.swiper-pagination .swiper-pagination-bullet-active{
  		background: red;
  	}
+</style>
+
+
+<style scoped>
+	.top {
+	    height: 0.8rem;
+	    width: 7.5rem;
+	    position: relative;
+	    left:0rem;
+	    padding-top: 0.1rem;
+	    background: #F5F5F5;
+	}
+	.loadimg {
+	    width: 0.7rem;
+	    height: 0.7rem;
+	    position: absolute;
+	    left: 0.2rem;
+	}
+	.t-tex1, .t-tex2 {
+	    margin: 0px;
+	    position: absolute;
+	    left: 1rem;
+	    color: #191919;
+	    font-size: .26rem;
+	}
+	.t-tex2 {
+	    top: 0.5rem;
+	    color: #6E6E6E;
+	    font-size: .24rem;
+	}
+	.t-open {
+	    width: 1.28rem;
+	    position: absolute;
+	    font-size: .24rem;
+	    color: #fff;
+	    height: .5rem;
+	    line-height: .5rem;
+	    text-align: center;
+	    right: .2rem;
+	    top: 50%;
+	    margin-top: -.25rem;
+	    border-radius: 1rem;
+	    background: #191919;
+	}
 	.det-box{
+		width: 100%;
 		margin-top: -1.2rem;
+		overflow-y: scroll;
+		/*border: 1px solid red;*/
+		
 	}
 	.det-title{
 		/*border: 1px solid red;*/
 		position: relative;
-	    padding: .24rem .3rem;
+	    padding:0.2rem;
 	}
 	.det-slogan{
 		font-family: "微软雅黑";
@@ -423,33 +472,52 @@
 	.det-price{
 		text-align: left;
 		position: relative;
-	    margin: .14rem auto 0 .14rem;
+	    margin: 0;
 	    z-index: 1;
 	}
 	.final-price{
 		font-size: .34rem;
 	    color: #ee1414;
 	    font-weight: 700;
-	    line-height: .4rem;
+	    line-height: .2rem;
+	    
 	}
 	.origin-price{
 		 margin-left: .12rem;
 	    font-size: .26rem;
 	    color: #9e9e9e;
 	    text-decoration: line-through;
-    	line-height: .4rem;
+    	line-height: .2rem;
 	}
 	.det-bun{
-    	padding: .24rem .3rem;
+    	/*padding: .24rem .3rem;*/
+    	overflow: scroll;
+    	width: 96%;
+    	height: 1rem;
+    	margin:0 auto;
+    	margin-bottom: -0.3rem;
+    	/*border: 1px solid red;*/
+	}
+	.det-bun-box{
+		/*position: relative;*/
+		/*padding: .24rem .3rem;*/
+    	/*border: 1px solid red;*/
+    	display: flex;
+    	flex-direction:row;
+	}
+	.det-item{
+		position: relative;
+		margin-right: 0.2rem;
 	}
 	.det-bun img{
 	    width: 2.6rem;
     	height: .64rem;
+    	margin:0px;
 	}
 	.bundle-count{
 		position: absolute;
 		top: 0px;
-		left: 0px;
+		left: 0;
 		display: inline-block;
 	    text-align: center;
 	    line-height: .64rem;
@@ -459,7 +527,7 @@
 	.bundle-price{
 		position: absolute;
 		top: 0px;
-		right: 0px;
+		left: 0.9rem;
 		display: inline-block;
 	    text-align: center;
 	    line-height: .64rem;
@@ -579,9 +647,11 @@
 	    margin-top: 0.1rem;
 	}
 	.activity{
+		/*border:1px solid red;*/
 		border-bottom: .12rem solid #f5f5f5;
 	}
 	.acti-box{
+		/*border:1px solid red;*/
 		height: 1.5rem;
 		position: relative;
 	    border-bottom: 1px solid #e6e6e6;
@@ -590,11 +660,12 @@
 	    display: flex;
 	}
 	.acti-box:before {
+		/*border:1px solid red;*/
 	    position: absolute;
 	    content: '';
 	    left: -.3rem;
 	    top: 0;
-	    width: 150%;
+	    width: 100%;
 	    height: 1px;
 	    line-height: 0;
 	    background-color: #e6e6e6;
@@ -652,6 +723,6 @@
 	
 	
 	.zui1{
-		height: 5rem;
+		height: 1rem;
 	}
 </style>

@@ -1,9 +1,10 @@
 {
 	"pros":[
 		{
-			"images":"./data/images/index/cur1.png",
-			"title":"衣服",
-			"des":"这是衣服"
+			"images":"../../data/images/index/lit2.png",
+			"title":"为双唇添加魅惑之红",
+			"price1":"177",
+			"price2":"411"
 		},
 		{
 			"images":"./data/images/index/cur2.png",
@@ -37,6 +38,23 @@
 			"images":"./data/images/index/cur3.png",
 			"title":"防晒榜",
 			"des":"已下单2.6万件"
+		}	
+	],
+	"con8":[
+		{
+			"images":"./data/images/index/cur1.png",
+			"title":"销量榜",
+			"des":"防晒"
+		},
+		{
+			"images":"./data/images/index/cur2.png",
+			"title":"销量榜",
+			"des":"乳液"
+		},
+		{
+			"images":"./data/images/index/cur3.png",
+			"title":"销量榜",
+			"des":"化妆水"
 		}	
 	],
 	
@@ -106,22 +124,43 @@
 	"pros3":[
 		{
 			"images":"./data/images/index/lit1.png",
-			"des1":"￥300",
-			"des2":"￥400",
+			"des1":"￥120",
+			"des2":"￥299",
 			"title":"为双唇添加魅惑之红",
 			"status":"以抢光"
 		},
 		{
-			"images":"./data/images/index/lit1.png",
-			"des1":"￥300",
-			"des2":"￥400",
-			"title":"为双唇添加魅惑之红",
+			"images":"./data/images/index/lit2.png",
+			"des1":"￥86",
+			"des2":"￥129",
+			"title":"通透密着滋润眼部",
+			"status":"以抢光"
+		},
+		{
+			"images":"./data/images/index/lit3.png",
+			"des1":"￥249",
+			"des2":"￥468",
+			"title":"爱上玻尿酸原液",
+			"status":"以抢光"
+		},
+		{
+			"images":"./data/images/index/lit4.png",
+			"des1":"￥122",
+			"des2":"￥329",
+			"title":"大名鼎鼎冰冰酵素",
+			"status":"以抢光"
+		},
+		{
+			"images":"./data/images/index/lit5.png",
+			"des1":"￥99",
+			"des2":"￥179",
+			"title":"少女粉嫩嘟嘟唇",
 			"status":"以抢光"
 		},
 		{
 			"images":"./data/images/index/lit1.png",
-			"des1":"￥300",
-			"des2":"￥400",
+			"des1":"￥299",
+			"des2":"￥379",
 			"title":"为双唇添加魅惑之红",
 			"status":"以抢光"
 		}
@@ -265,6 +304,166 @@
 			"des":"SS制药"
 		}
 		
+	],
+	"con5":[
+		{
+			"status":"抢购中",
+			"time":"8:00"
+		},
+		{
+			"status":"即将开始",
+			"time":"9:00"
+		},
+		{
+			"status":"即将开始",
+			"time":"10:00"
+		},
+		{
+			"status":"即将开始",
+			"time":"11:00"
+		},
+		{
+			"status":"即将开始",
+			"time":"12:00"
+		},
+		{
+			"status":"即将开始",
+			"time":"13:00"
+		},
+		{
+			"status":"即将开始",
+			"time":"14:00"
+		}
+	],
+	"con6":[
+		{
+			"images":"./data/images/index/brand9.png",
+			"des":"会百世"
+		},
+		{
+			"images":"./data/images/index/brand10.png",
+			"des":"乐而雅"
+		},
+		{
+			"images":"./data/images/index/brand11.png",
+			"des":"曼丹"
+		},
+		{
+			"images":"./data/images/index/brand12.png",
+			"des":"倩丽"
+		},
+		{
+			"images":"./data/images/index/brand13.png",
+			"des":"花王"
+		},
+		{
+			"images":"./data/images/index/brand14.png",
+			"des":"山本汉方"
+		},
+		{
+			"images":"./data/images/index/brand15.png",
+			"des":"乐敦"
+		},
+		{
+			"images":"./data/images/index/brand16.png",
+			"des":"SS制药"
+		}
+	],
+	"con7":[
+		{
+			"images":"./data/images/index/brand17.png",
+			"des":"会百世"
+		},
+		{
+			"images":"./data/images/index/brand18.png",
+			"des":"乐而雅"
+		},
+		{
+			"images":"./data/images/index/brand19.png",
+			"des":"曼丹"
+		},
+		{
+			"images":"./data/images/index/brand20.png",
+			"des":"倩丽"
+		},
+		{
+			"images":"./data/images/index/brand21.png",
+			"des":"花王"
+		},
+		{
+			"images":"./data/images/index/brand22.png",
+			"des":"山本汉方"
+		},
+		{
+			"images":"./data/images/index/brand23.png",
+			"des":"乐敦"
+		},
+		{
+			"images":"./data/images/index/brand24.png",
+			"des":"SS制药"
+		}
+	],
+	"con9":[
+		{
+			"images":"./data/images/index/lit1.png",
+			"title":"SHISEIDO 资生堂 ANESSA 安耐晒2018新款粉金温和型 60ml",
+			"des":"￥72"
+		},
+		{
+			"images":"./data/images/index/lit3.png",
+			"title":"LION 狮王 White&White特效美白牙膏 150g*2支",
+			"des":"￥12"
+		},
+		{
+			"images":"./data/images/index/lit2.png",
+			"title":"7天完美肌养成 Creer Beaute 克丽贝蒂 凡尔赛面膜金色1片装*7",
+			"des":"￥14"
+		},
+		{
+			"images":"./data/images/index/lit4.png",
+			"title":"FANCL 芳珂 新版无添加纳米净化卸妆油 120ML",
+			"des":"￥89"
+		},
+		{
+			"images":"./data/images/index/lit5.png",
+			"title":"ISHIZAWA LABS 石泽研究所 毛孔抚子日本大米面膜 10片X3",
+			"des":"￥62"
+		},
+		{
+			"images":"./data/images/index/lit3.png",
+			"title":"Biore 碧柔 倍护防晒乳液 SPF50+ PA++++ 40ML*2",
+			"des":"￥74"
+		},
+		{
+			"images":"./data/images/index/lit1.png",
+			"title":"KRACIE 肌美精 神奇口香糖果 玫瑰花香味 32g",
+			"des":"￥72"
+		},
+		{
+			"images":"./data/images/index/lit2.png",
+			"title":"ISHIYA 石屋制菓 北海道白色恋人白巧克力夹心饼干 12片装",
+			"des":"￥82"
+		},
+		{
+			"images":"./data/images/index/lit5.png",
+			"title":"CPB 肌肤之钥 光凝妆前隔离霜 40g",
+			"des":"￥94"
+		},
+		{
+			"images":"./data/images/index/lit1.png",
+			"title":"CUREL 珂润 洁颜泡沫 150ML",
+			"des":"￥68"
+		},
+		{
+			"images":"./data/images/index/lit4.png",
+			"title":"DAISO 大创 ER药用胎盘素美白精华 30ml",
+			"des":"￥92"
+		},
+		{
+			"images":"./data/images/index/lit3.png",
+			"title":"Calbee 卡乐比 薯条三兄弟 10袋",
+			"des":"￥24"
+		}
 	]
 
 	

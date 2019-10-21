@@ -2,11 +2,11 @@
 	 <div>
 	 	<div class="br-top">
 			<span @click="toggle(fen);" :class="{bom:msg==fen}">分类</span>
-	            　<span @click="toggle(qi);" :class="{bom:msg==qi}">旗舰店</span>
-	            　<span @click="toggle(bar);" :class="{bom:msg==bar}">品牌馆</span>
+	            　	<span @click="toggle(qi);" :class="{bom:msg==qi}">旗舰店</span>
+	            　	<span @click="toggle(bar);" :class="{bom:msg==bar}">品牌馆</span>
 	 	</div>
 	 	
-	 		 <component :is="msg"></component> 
+	 		<component :is="msg"></component> 
 	 </div>
 </template>
 

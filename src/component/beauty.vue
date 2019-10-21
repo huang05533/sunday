@@ -38,27 +38,24 @@
 
 		
 		<div class="sli5">新人专享优惠</div>
-		<ul class="new-ul">
-			
-				<li v-for="(v,i) in list2" class="new-li">
-					<div class="new-timg">
-						<i class="ting-r"></i>
-						<router-link to="/details">
-							<img :src="v.images" class="ting-photo">
-						</router-link>
-						<i class="ting-l"></i>
-					</div>				
-					<h3 class="new-ti">{{v.title}}</h3>					
-					<p class="new-ti2">{{v.des}}</p>
-					<p class="ne-pri">新人价</p>
-					
-					<div class="addjo" @click="t()">
-						<p class="addj">加入购物袋</p>
-						<i class="addbag"></i>
-					</div>	
-					
-				</li>
-			
+		<ul class="new-ul">			
+			<li v-for="(v,i) in list2" class="new-li">
+				<div class="new-timg">
+					<i class="ting-r"></i>
+					<router-link to="/details">
+						<img :src="v.images" class="ting-photo">
+					</router-link>
+					<i class="ting-l"></i>
+				</div>				
+				<h3 class="new-ti">{{v.title}}</h3>					
+				<p class="new-ti2">{{v.des}}</p>
+				<p class="ne-pri">新人价</p>
+				
+				<div class="addjo" @click="t()">
+					<p class="addj">加入购物袋</p>
+					<i class="addbag"></i>
+				</div>	
+			</li>
 		</ul>
 		
 		

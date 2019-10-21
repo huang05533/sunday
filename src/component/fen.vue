@@ -3,51 +3,51 @@
 		<div class="zui"></div>
 		
 		<!--左边导航栏-->
-		<div class="br-left">
-			<div @click="toggle(br1);" :class="{gu:msg==br1}">
-				<div class="floor"><span>M</span>階</div>
-				<div class="br-w">豌豆甄选</div>
-				<div class="br-sel">你的最佳选择</div>
+		<div class="br-left-box">
+			<div class="br-left">
+				<div @click="toggle(br1);" :class="{gu:msg==br1}">
+					<div class="floor"><span>M</span>階</div>
+					<div class="br-w">豌豆甄选</div>
+					<div class="br-sel">你的最佳选择</div>
+				</div>
+		            　<div @click="toggle(br2);" :class="{gu:msg==br2}">
+		            <div class="floor"><span>1</span>階</div>
+					<div class="br-w">护肤美妆</div>
+					<div class="br-sel">美容コスメ</div>
+		        </div>
+		        <div @click="toggle(br3);" :class="{gu:msg==br3}">
+		        	<div class="floor"><span>2</span>階</div>
+					<div class="br-w">个人洗护</div>
+					<div class="br-sel">パーソナルケア</div>
+		        </div>
+		            　<div @click="toggle(br4);" :class="{gu:msg==br4}">
+		            <div class="floor"><span>3</span>階</div>
+					<div class="br-w">中古奢品</div>
+					<div class="br-sel">ビンテージ</div>
+		        </div>
+		        <div @click="toggle(br5);" :class="{gu:msg==br5}">
+		            <div class="floor"><span>4</span>階</div>
+					<div class="br-w">护肤美妆</div>
+					<div class="br-sel">美容コスメ</div>
+		        </div>
+		        <div @click="toggle(br6);" :class="{gu:msg==br6}">
+		        	<div class="floor"><span>5</span>階</div>
+					<div class="br-w">个人洗护</div>
+					<div class="br-sel">パーソナルケア</div>
+		        </div>
+		            　<div @click="toggle(br7);" :class="{gu:msg==br7}">
+		            <div class="floor"><span>6</span>階</div>
+					<div class="br-w">中古奢品</div>
+					<div class="br-sel">ビンテージ</div>
+		        </div>
 			</div>
-	            　<div @click="toggle(br2);" :class="{gu:msg==br2}">
-	            <div class="floor"><span>1</span>階</div>
-				<div class="br-w">护肤美妆</div>
-				<div class="br-sel">美容コスメ</div>
-	        </div>
-	        <div @click="toggle(br3);" :class="{gu:msg==br3}">
-	        	<div class="floor"><span>2</span>階</div>
-				<div class="br-w">个人洗护</div>
-				<div class="br-sel">パーソナルケア</div>
-	        </div>
-	            　<div @click="toggle(br4);" :class="{gu:msg==br4}">
-	            <div class="floor"><span>3</span>階</div>
-				<div class="br-w">中古奢品</div>
-				<div class="br-sel">ビンテージ</div>
-	        </div>
-	        <div @click="toggle(br5);" :class="{gu:msg==br5}">
-	            <div class="floor"><span>4</span>階</div>
-				<div class="br-w">护肤美妆</div>
-				<div class="br-sel">美容コスメ</div>
-	        </div>
-	        <div @click="toggle(br6);" :class="{gu:msg==br6}">
-	        	<div class="floor"><span>5</span>階</div>
-				<div class="br-w">个人洗护</div>
-				<div class="br-sel">パーソナルケア</div>
-	        </div>
-	            　<div @click="toggle(br7);" :class="{gu:msg==br7}">
-	            <div class="floor"><span>6</span>階</div>
-				<div class="br-w">中古奢品</div>
-				<div class="br-sel">ビンテージ</div>
-	        </div>
-	            　
 		</div>
 		
-            <!--<ul>
-            	<li v-for="(v,i) in navs" @click="toggle({{v.br1}});">{{v.title}}</li>
-            </ul>-->
+		
+
 	            
 	            
-	     <component :is="msg"></component>    
+	     <component :is="msg"></component>  
 	</div>
 </template>
 
@@ -106,13 +106,21 @@
 		width: 2rem;
 		border-left: 2px solid red;
 	}
-	.br-left{
-		position: absolute;
+	.br-left-box{
+		position: fixed;
 		left:0px;
 		top:0.88rem;
-		width: 2rem;
-		height: 15rem;
+		width: 2.3rem;
+		height: 12rem;
 		background: #fff;
+		overflow: scroll;
+	}
+	.br-left{
+		width: 2.3rem;
+		height: 14.5rem;
+		background: #fff;
+		
+		/*border:1px solid blue;*/
 	}
 	.br-left>div{
 		padding-left: 0.25rem;

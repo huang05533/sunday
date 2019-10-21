@@ -21,7 +21,7 @@
 			<br />
 			<br />
 			<br />
-			<li class="br2-icon-box" v-for="(v,i) in con4">
+			<li class="br2-icon-box" v-for="(v,i) in con6">
 				<div class="iccimg">
 					<img :src="v.images" alt="" />
 				</div>
@@ -37,7 +37,7 @@
 			<br />
 			<br />
 			<br />
-			<li class="br2-icon-box" v-for="(v,i) in con4">
+			<li class="br2-icon-box" v-for="(v,i) in con7">
 				<div class="iccimg">
 					<img :src="v.images" alt="" />
 				</div>
@@ -56,12 +56,16 @@
 		data(){
 			return{
 				con4:'',
+				con6:'',
+				con7:''
 			}
 		},
 		mounted(){
 	     	this.$http.get('./data/my.json')
 			.then((response)=>{
 			this.con4=response.data.con4;
+			this.con6=response.data.con6;
+			this.con7=response.data.con7;
 			})
 			.catch(function (error) {	
 				console.log(error);

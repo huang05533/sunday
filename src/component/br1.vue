@@ -172,6 +172,8 @@
 				</div>
 			</div>
 			
+			
+			<div class="zui"></div>
 		</div>
 		
 	</div>
@@ -186,13 +188,16 @@
 		top: 0.88rem;
 		right: 0.2rem;
 		width: 5.2rem;
+		background-color: white;
 		/*height: 14rem;*/
 		/*border: 1px solid blue;*/
 	}
 </style>
 
 <style scoped>
-	
+	.zui{
+		height: 1rem;
+	}
 	.br1-top{
 		line-height: .8rem;
 	    background-color: #fafafa;

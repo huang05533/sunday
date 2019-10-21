@@ -57,6 +57,8 @@ li {
 }
 
 a {
-  color: #42b983;
+  color: black;
+  text-decoration: none;
+  font-size:0.24rem;
 }
 </style>
